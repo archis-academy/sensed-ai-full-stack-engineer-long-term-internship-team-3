@@ -3,7 +3,7 @@ import "./PrimaryHeader.scss";
 import { Menu, X, Home, User } from "lucide-react";
 
 const PrimaryHeader: React.FC = () => {
-  // Menü durumunu boolean tipte tanımlıyoruz
+ 
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
