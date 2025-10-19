@@ -1,7 +1,10 @@
-import Welcome from "@components/welcome/welcome";
-
+import Partners from "@/components/partnerssection/partners";
 function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <Partners />
+    </>
+  );  
 }
 
 export default Home;
