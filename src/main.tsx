@@ -1,15 +1,10 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
-import Home from "@pages/home/home";
-import "@src/main.scss";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/_variables.scss";
+import PropertySearchForm from "./components/HeroElements/PropertySearchForm";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>,
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <PropertySearchForm />
+  </React.StrictMode>
 );
