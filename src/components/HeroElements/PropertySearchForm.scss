@@ -1,3 +1,6 @@
+@use "../../styles/variables" as *;
+
+
 .property-form {
   background: #fff;
   border-radius: 20px;
@@ -6,7 +9,7 @@
   max-width: 360px;
   padding: 2rem;
   margin-left: auto;
-  font-family: "Poppins", sans-serif;
+  font-family: $primary-font;
 
   &__tabs {
     display: flex;
@@ -56,7 +59,7 @@
     outline: none;
 
     &:focus {
-      box-shadow: 0 0 0 2px rgba(58, 12, 163, 0.3); /* rgba($primary-color, 0.3) */
+      box-shadow: 0 0 0 2px rgba(58, 12, 163, 0.3); 
     }
   }
 
@@ -96,7 +99,7 @@
     transition: background 0.25s ease;
 
     &:hover {
-      background: #4B3FFF; /* hover rengi */
+      background: #4B3FFF; 
     }
 
     svg {
@@ -104,7 +107,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet-m) {
     margin: 0 auto;
     max-width: 90%;
   }
