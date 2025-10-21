@@ -1,7 +1,13 @@
-import Welcome from "@components/welcome/welcome";
+import OurServices from "@components/ourServices/ourServices";
 
 function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <OurServices />
+
+    </>
+  );
 }
+
 
 export default Home;
