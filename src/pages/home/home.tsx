@@ -1,7 +1,13 @@
-import Welcome from "@components/welcome/welcome";
+import Location from "@/components/locationSection/location";
+
 
 function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <Location />
+  
+    </>
+  );
 }
 
 export default Home;
