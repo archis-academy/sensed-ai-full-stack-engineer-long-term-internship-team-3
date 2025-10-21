@@ -1,7 +1,7 @@
-import Welcome from "@components/welcome/welcome";
+import CtaBanner from "@/components/ctaBanner/ctaBanner";
 
 function Home() {
-  return <Welcome />;
+  return <CtaBanner />;
 }
 
 export default Home;
