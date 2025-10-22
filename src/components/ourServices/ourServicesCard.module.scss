@@ -13,7 +13,8 @@ height: auto;
     transform: translateY(-5px);
   }
  @media (max-width: $tablet-l) {
-  height: 270px;
+  min-height: 270px;
+  height: auto; 
   }
 
 }
