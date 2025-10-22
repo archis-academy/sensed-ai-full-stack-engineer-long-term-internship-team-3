@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./partners.module.scss";
 import google from "@/assets/google.png";
 import amazon from "@/assets/amazon.png";
