@@ -1,3 +1,4 @@
+import React from "react";
 import style from "./ourServicesCard.module.scss";
 
 export interface ServiceItem {
@@ -26,4 +27,3 @@ const OurServicesCard: React.FC<OurServicesCardProps> = ({ service }) => {
 };
 
 export default OurServicesCard;
-
