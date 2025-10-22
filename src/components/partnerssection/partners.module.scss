@@ -9,6 +9,7 @@
   background-color: $white;
   position: relative;
   overflow: hidden;
+  padding: 50px;
 
   .bigBlueBlob {
     position: absolute;
@@ -43,6 +44,7 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1.5rem;
     justify-items: center;
+    align-items: center;
     width: 100%;
     max-width: 1160px;
     z-index: 2;

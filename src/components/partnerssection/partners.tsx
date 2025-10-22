@@ -1,13 +1,18 @@
 import styles from "./partners.module.scss";
-
+import google from "@/assets/google.png";
+import amazon from "@/assets/amazon.png";
+import logitech from "@/assets/logitech.png";
+import spotify from "@/assets/spotify.png";
+import samsung from "@/assets/samsung.png";
+import netflix from "@/assets/netflix.png";
 const Partners: React.FC = () => {
   const partners = [
-    { name: "Google", image: "google.png", id: 1 },
-    { name: "Amazon", image: "amazon.png", id: 2 },
-    { name: "Logitech", image: "logitech.png", id: 3 },
-    { name: "Spotify", image: "spotify.png", id: 4 },
-    { name: "Samsung", image: "samsung.png", id: 5 },
-    { name: "Netflix", image: "netflix.png", id: 6 },
+    { name: "Google", image: google, id: 1 },
+    { name: "Amazon", image: amazon, id: 2 },
+    { name: "Logitech", image: logitech, id: 3 },
+    { name: "Spotify", image: spotify, id: 4 },
+    { name: "Samsung", image: samsung, id: 5 },
+    { name: "Netflix", image: netflix, id: 6 },
   ];
 
   return (
@@ -22,7 +27,7 @@ const Partners: React.FC = () => {
         {partners.map((partner) => (
           <li key={partner.id} className={styles.logo}>
             <img
-              src={`/images/${partner.image}`}
+              src={partner.image}
               alt={`${partner.name} logo`}
               loading="lazy"
             />
