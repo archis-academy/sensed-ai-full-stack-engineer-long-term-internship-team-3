@@ -6,7 +6,9 @@ import logitech from "@/assets/logitech.png";
 import spotify from "@/assets/spotify.png";
 import samsung from "@/assets/samsung.png";
 import netflix from "@/assets/netflix.png";
+import ellipse from "@/assets/ellipse.png";
 const Partners: React.FC = () => {
+  // Static partners array defined outside the component to avoid re-creation on each render
   const partners = [
     { name: "Google", image: google, id: 1 },
     { name: "Amazon", image: amazon, id: 2 },
@@ -19,7 +21,7 @@ const Partners: React.FC = () => {
   return (
     <section className={styles.partners}>
       <div className={styles.bigBlueBlob}>
-        <img src="/images/Ellipse.png" alt="Ellipse" />
+        <img src={ellipse} alt="Ellipse" />
       </div>
 
       <h6>Trusted by 100+ Companies across the globe!</h6>
