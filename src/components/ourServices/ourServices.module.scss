@@ -37,7 +37,7 @@
 .title {
   font-family: $secondary-font;
   font-weight: 600;
-  font-size: 39.8px;
+  font-size: 40px;
   line-height: 47px;
   letter-spacing: 0%;
   text-align: center;
@@ -54,8 +54,10 @@
   margin-top: 70px;
   margin-bottom: 50px;
   gap: 40px;
-
+  @media (max-width: $tablet-l) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
   @media (max-width: $mobile-s) {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }

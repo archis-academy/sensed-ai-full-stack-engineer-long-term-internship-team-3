@@ -2,13 +2,16 @@
 @use "@styles/_functions.scss" as *;
 
 .servicesCard {
-    
+
   background: $white;
   border-radius: 30px;
   padding: 2.5rem 1.5rem;
   height: 363px;
   &:hover {
     transform: translateY(-5px);
+  }
+ @media (max-width: $tablet-l) {
+  height: 270px;
   }
 
 }
@@ -35,14 +38,14 @@
   max-width: 220px;
   margin: auto;
   text-align: center;
-  @media (max-width: 858px) {
+  @media (max-width: $tablet-l) {
     max-width: 400px;
   }
 
   .cardTitle {
     font-family: $secondary-font;
     font-weight: 500;
-    font-size: 19.4px;
+    font-size: 20px;
     line-height: 100%;
     text-align: center;
     color: $bg-gray;
