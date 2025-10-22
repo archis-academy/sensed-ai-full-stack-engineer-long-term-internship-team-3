@@ -7,7 +7,29 @@
  * */
 $white: #ffffff;
 $black: #000000;
-$blue: #3A0CA3;
+$blue: #4361EE;
+$blue-dark: #3A0CA3;
+$primary: #6c5ce7;
+$primary-dark: #5849c4;
+$primary-light: #8b7de8;
+$secondary: #4a90e2;
+$accent: #ff6b6b;
+
+// Background colors
+$background: #faf9f6;
+$background-alt: #f5f3ef;
+$surface: #ffffff;
+
+// Text colors
+$text: #1a1a1a;
+$text-light: #6b7280;
+$text-muted: #9ca3af;
+
+// Utility colors
+$border: #e5e7eb;
+$success: #10b981;
+$warning: #f59e0b;
+$error: #ef4444;
 
 /*
  * Typography and font sizes
@@ -21,9 +43,53 @@ $secondary-font: "Poppins", sans-serif;
 
 //font-sizes
 $font-base: pxToRem(16);
+$font-xs: pxToRem(12);
+$font-sm: pxToRem(14);
+$font-lg: pxToRem(18);
+$font-xl: pxToRem(20);
+$font-2xl: pxToRem(24);
+$font-3xl: pxToRem(30);
+$font-4xl: pxToRem(36);
 
 //font-weight
+$font-light: 300;
 $font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+$spacing-xs: pxToRem(4);
+$spacing-sm: pxToRem(8);
+$spacing-md: pxToRem(16);
+$spacing-lg: pxToRem(24);
+$spacing-xl: pxToRem(32);
+$spacing-2xl: pxToRem(48);
+
+$radius-sm: pxToRem(6);
+$radius-md: pxToRem(12);
+$radius-lg: pxToRem(20);
+$radius-full: 9999px;
+
+// Shadow variables
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.12);
+
+// Transition variables
+$transition-base: all 0.25s ease-in-out;
+$transition-fast: all 0.15s ease-in-out;
+$transition-slow: all 0.35s ease-in-out;
+
+// Line heights 
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+
+// Container widths 
+$container-sm: pxToRem(640);
+$container-md: pxToRem(768);
+$container-lg: pxToRem(1024);
+$container-xl: pxToRem(1280);
 
 /*
  * Screen Breakpoints
@@ -38,5 +104,5 @@ $tablet-l: pxToRem(992);
 $tablet-m: pxToRem(768);
 $tablet-s: pxToRem(640);
 $mobile-l: pxToRem(576);
-$mobile-m: pxTotRem(480);
+$mobile-m: pxToRem(480);
 $mobile-s: pxToRem(320);
