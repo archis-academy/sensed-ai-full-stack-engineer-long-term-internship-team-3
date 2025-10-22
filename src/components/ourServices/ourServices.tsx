@@ -6,6 +6,7 @@ import house from "./../../assets/icons/house.svg";
 import search from "./../../assets/icons/search.svg"; 
 import bed from "./../../assets/icons/bed.svg";
 
+// Bu array component içinde tanımlandı, performans kaybı önemsiz
 const services: ServiceItem[] = [
   {
     id: 1,

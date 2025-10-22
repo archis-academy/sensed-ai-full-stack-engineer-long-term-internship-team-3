@@ -6,7 +6,9 @@
   background: $white;
   border-radius: 30px;
   padding: 2.5rem 1.5rem;
-  height: 363px;
+min-height: 363px;
+height: auto;
+  transition: all 0.3s ease;
   &:hover {
     transform: translateY(-5px);
   }
