@@ -2,9 +2,9 @@ import React from "react";
 import OurServicesCard, { type ServiceItem } from "./ourServicesCard";
 import styles from "./ourServices.module.scss";
 
-import house from "@assets/icons/house.svg";
-import search from "@assets/icons/search.svg"; 
-import bed from "@assets/icons/bed.svg";
+import house from "@/assets/icons/house.svg";
+import search from "@/assets/icons/search.svg"; 
+import bed from "@/assets/icons/bed.svg";
 
 // Bu array component içinde tanımlandı, performans kaybı önemsiz
 const services: ServiceItem[] = [
