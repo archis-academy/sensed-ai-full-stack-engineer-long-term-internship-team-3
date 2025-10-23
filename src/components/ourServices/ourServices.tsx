@@ -5,7 +5,9 @@ import house from "@/assets/icons/house.svg";
 import search from "@/assets/icons/search.svg"; 
 import bed from "@/assets/icons/bed.svg";
 
-// Bu array component içinde tanımlandı, performans kaybı önemsiz
+// Note: services array is defined here for demonstration purposes.
+// In a real project, move this data to a separate file (e.g., src/data/services.ts) 
+// and import it into the component to keep data and UI separate.
 const services: ServiceItem[] = [
   {
     id: 1,

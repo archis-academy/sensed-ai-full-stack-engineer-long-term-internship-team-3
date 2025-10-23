@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './testimonials.module.scss';
 import { StarFill } from 'react-bootstrap-icons';
-import leftArrow from "@/assets/icons/rightArrow.svg"
-import rightArrow from "@/assets/icons/leftArrow.svg";
+import rightArrow from "@/assets/icons/rightArrow.svg"
+import leftArrow from "@/assets/icons/leftArrow.svg";
 import quoteIcon from "@/assets/icons/quoteIcon.png"
 import person1 from "@/assets/person1.jpg"
 import person2 from "@/assets/person2.jpg"
@@ -23,6 +23,9 @@ interface Testimonial {
   rating: number;
   avatarUrl: string;
 }
+// Note: testimonialsData array is defined here for demonstration purposes.
+// In a real project, move this data to a separate file (e.g., src/data/testimonials.ts) 
+// and import it into the component to keep data and UI separate.
 
 const testimonialsData: Testimonial[] = [
   {
@@ -73,10 +76,10 @@ const Testimonials: React.FC = () => {
         </p>
         <div className={styles.navigation}>
           <button onClick={prevTestimonial} className={styles.navArrow} aria-label="Previous">
-            <img src={rightArrow} alt="leftArrow" />
+            <img src={leftArrow} alt="leftArrow" />
           </button> 
           <button onClick={nextTestimonial} className={styles.navArrow} aria-label="Next">
-            <img src={leftArrow} alt="rightArrow" />
+            <img src={rightArrow} alt="rightArrow" />
           </button>
         </div>
         </div>
