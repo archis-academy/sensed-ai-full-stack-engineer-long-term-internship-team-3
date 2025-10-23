@@ -73,10 +73,10 @@ const Testimonials: React.FC = () => {
         </p>
         <div className={styles.navigation}>
           <button onClick={prevTestimonial} className={styles.navArrow} aria-label="Previous">
-            <img src={leftArrow} alt="leftArrow" />
+            <img src={rightArrow} alt="leftArrow" />
           </button> 
           <button onClick={nextTestimonial} className={styles.navArrow} aria-label="Next">
-            <img src={rightArrow} alt="rightArrow" />
+            <img src={leftArrow} alt="rightArrow" />
           </button>
         </div>
         </div>
