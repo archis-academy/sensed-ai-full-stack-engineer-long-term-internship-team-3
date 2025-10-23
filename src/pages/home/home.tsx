@@ -1,15 +1,18 @@
 import Location from "@/components/locationSection/location";
 import OurServices from "@components/ourServices/ourServices";
-import Testimonials from "@components/testimonialSection/testimonial";
+import Partners from "@/components/partnerssection/partners";
+import TeamMembers from "@/components/teamMember/teamMembers";
 import CtaBanner from "@/components/ctaBanner/ctaBanner";
-
+import Testimonials from "@components/testimonialSection/testimonial";
 function Home() {
   return (
-    <>   <Testimonials />
-     <OurServices />
-      <Location />
-       <CtaBanner />
-    
+    <>
+      <Partners />
+      <OurServices />
+      <Location /> 
+      <TeamMembers />
+      <Testimonials />
+      <CtaBanner />
     </>
   );
 }

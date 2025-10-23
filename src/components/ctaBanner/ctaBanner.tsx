@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./ctaBanner.module.scss";
-import artist from "../../assets/bannerArtist.svg";
+import artist from "@/assets/bannerArtist.svg";
 const CtaBanner: React.FC = () => {
   const navigate = useNavigate();
 
