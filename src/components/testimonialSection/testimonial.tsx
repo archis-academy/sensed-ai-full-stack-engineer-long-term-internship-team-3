@@ -76,6 +76,7 @@ const Testimonials: React.FC = () => {
         </p>
         <div className={styles.navigation}>
           <button onClick={prevTestimonial} className={styles.navArrow} aria-label="Previous">
+            {/* Currently importing arrows as images, but we plan to switch to SVGR (React components)  */}
             <img src={leftArrow} alt="leftArrow" />
           </button> 
           <button onClick={nextTestimonial} className={styles.navArrow} aria-label="Next">
@@ -86,8 +87,8 @@ const Testimonials: React.FC = () => {
       </div>
 
       {/* right side */}
-      <div className={styles.cardSide}>
-        <div className={styles.testimonialCard}>
+      <ul className={styles.cardSide}>
+        <li className={styles.testimonialCard}>
           <img className={styles.quoteIcon} src={quoteIcon} alt="quoteIcon" />
           <div className={styles.testimonialText}>
             
@@ -112,8 +113,8 @@ const Testimonials: React.FC = () => {
               />
             ))}
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   );
 };
