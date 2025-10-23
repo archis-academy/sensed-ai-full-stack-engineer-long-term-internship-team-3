@@ -62,7 +62,7 @@ const Testimonials: React.FC = () => {
   const testimonial = testimonialsData[currentIndex];
 
   return (
-    <div className={styles.testimonialsSection}>
+    <section className={styles.testimonialsSection}>
       {/* left side */}
       <div className={styles.contentSide}>
         <div className={styles.content}>
@@ -111,7 +111,7 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
