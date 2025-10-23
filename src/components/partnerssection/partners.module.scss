@@ -1,0 +1,70 @@
+@use "@styles/_variables.scss" as *;
+
+.partners {
+  max-width: 1440px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+
+  .bigBlueBlob {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -40px;
+    left: 50px;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  h6 {
+    font-family: $secondary-font;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $gray;
+    margin-bottom: 58px;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1160px;
+    z-index: 2;
+
+    .logo {
+      width: 120px;
+      list-style: none;
+      opacity: 0.9;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
